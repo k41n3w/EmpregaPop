@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: pguser
+  password: postgres
+ 
+development:
+  <<: *default
+  database: ep_development
+ 
+test:
+  <<: *default
+  database: ep_test
