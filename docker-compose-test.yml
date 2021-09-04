@@ -1,0 +1,50 @@
+version: '3'
+ 
+services:
+  db:
+    image: 'postgres:9.5'
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+ 
+ 
+  test:
+    depends_on:
+      - 'db'
+      - 'selenium'
+    build: .
+    command: bash start
+    volumes:
+      - '.:/portfolio'
+      - 'box:/box'
+    environment:
+      - SELENIUM_HOST=selenium
+      - SELENIUM_PORT=4444
+      - TEST_APP_HOST=test
+      - TEST_PORT=3000
+      - RAILS_ENV=test
+    stdin_open: true
+    tty: true
+ 
+ 
+  selenium:
+    image: selenium/standalone-chrome-debug:3.0.1-germanium
+    logging:
+      driver: none
+    stdin_open: true
+    tty: true
+    ports: ['4444:4444', '5900:5900']
+ 
+ 
+  box:
+    image: busybox
+    volumes:
+      - box:/box
+ 
+ 
+volumes:
+  postgres:
+  box:
