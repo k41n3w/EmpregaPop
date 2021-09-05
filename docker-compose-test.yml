@@ -16,7 +16,7 @@ services:
       - 'db'
       - 'selenium'
     build: .
-    command: bash start
+    command: bash start.sh
     volumes:
       - '.:/portfolio'
       - 'box:/box'

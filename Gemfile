@@ -32,6 +32,8 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_bot_rails', '~> 4.0'
+  gem 'rspec-expectations', '~> 3.4'
+  gem 'selenium-webdriver', '~> 3.0'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
