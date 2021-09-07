@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  percent: 9.99
+  portfolio: one
+
+two:
+  title: MyString
+  percent: 9.99
+  portfolio: two

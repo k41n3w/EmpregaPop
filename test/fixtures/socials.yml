@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kind: 1
+  url: MyString
+  portfolio: one
+
+two:
+  kind: 1
+  url: MyString
+  portfolio: two

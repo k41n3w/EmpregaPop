@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  slug: MyString
+  active: false
+  listed: false
+  featured: false
+  temp_avatar: 1
+  remote_ok: false
+  user: one
+
+two:
+  slug: MyString
+  active: false
+  listed: false
+  featured: false
+  temp_avatar: 1
+  remote_ok: false
+  user: two
