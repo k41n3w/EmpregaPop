@@ -1,0 +1,32 @@
+<div class="navbar-fixed">
+  <nav class="custom-blue">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">
+        <%= image_tag "logo-1", class: 'responsive-img' %>
+      </a>
+ 
+      <a href="#" data-target="side-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+ 
+      <ul class="right hide-on-med-and-down">
+        <% if current_user %>
+          <li><%= link_to 'Perfil', '/users/edit', class: 'nav-link' %></li>
+          <li>  <%= link_to('Sair', destroy_user_session_path, :method => :delete, class: 'nav-link') %></li>
+        <% else %>
+          <li><%= link_to 'Entrar', new_user_session_path, class: 'nav-link login-link' %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</div>
+ 
+<ul id="side-nav" class="sidenav">
+  <% if current_user %>
+    <li><%= link_to 'Perfil', '/users/edit', class: 'nav-link' %></li>
+    <li><div class="divider"></div></li>
+    <li>  <%= link_to('Sair', destroy_user_session_path, :method => :delete, class: 'nav-link') %></li>
+  <% else %>
+    <li><div class="divider"></div></li>
+    <li><%= link_to 'Entrar', new_user_session_path, class: 'nav-link login-link' %></li>
+    <li><div class="divider"></div></li>
+  <% end %>
+</ul>

@@ -1,0 +1,25 @@
+@media #{$medium-and-up} {
+  ul {
+    .login-link {
+      margin-right: 50px;
+    }
+    .nav-link {
+      font-size: 18px;
+    }
+  }
+  nav{
+    .brand-logo{
+      margin-top: 10px;
+      margin-left: 30px;
+      width: 160px;
+    }
+  }
+}
+ 
+@media #{$small-and-down} {
+  nav{
+    .brand-logo{
+      margin-top: 5px;
+    }
+  }
+}
