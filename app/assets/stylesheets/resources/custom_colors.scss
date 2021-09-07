@@ -1,0 +1,24 @@
+$custom_colors: (
+  "custom-black": (
+    "base": #292F33
+  ),
+ 
+  "custom-grey": (
+    "base": #AFB7C2,
+    "darken-1": #424C58
+  ),
+ 
+  "custom-blue": (
+    "base": #15BDD8
+  ),
+  
+  "custom-green": (
+    "base": #33C4B3
+  ),
+  
+  "custom-orange": (
+    "base": #F68E4F
+  ),
+);
+ 
+@include import-colors($custom_colors);

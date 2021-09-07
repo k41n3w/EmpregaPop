@@ -1,0 +1,3 @@
+@function get-custom-color($color-name, $color-variation: "base") {
+  @return map-get(map-get($custom_colors, $color-name), $color-variation);
+}
