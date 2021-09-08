@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="home-content sign-in">
+    <div class="row">
+      <div class='col s12 l3 offset-l5 m6 offset-m3 center'>
+        <b class="grey-text text-lighten-1" style="font-size: 24px;">Entre na sua conta</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class='card z-depth-4 col s12 l3 offset-l5 m6 offset-m3'>
+        <div class='card-content'>
+          <div class="row">
+            <div class="col m10 offset-m1 s10 offset-s1">
+              <%= form_with(model: resource, url: session_path(resource_name), local: true) do |f| %>
+                <div class="input-field">
+                  <%= f.label :email %><br />
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                </div>
+                <div class="input-field">
+                  <%= f.label :password %><br />
+                  <%= f.password_field :password, autocomplete: "off" %>
+                </div>
+                <div class="submit-button center">
+                  <button class='btn btn-large custom-blue form-button col m12 s12'>
+                    <i class='material-icons right'>send</i>ENTRAR
+                  </button>
+                </div>
+              <% end %>
+            </div>
+          </div>
+          <div class="row">
+            <div class='col s12 center'>
+              <a href="/">Ainda não possui uma conta?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
