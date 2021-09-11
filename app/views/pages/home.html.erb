@@ -1,2 +1,27 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class='row'>
+  <div class="home-title">
+    <p class="center flow-text custom-blue-text">
+      O <span class="custom-grey darken-1 white-text">&nbsp;EmpregaPoP&nbsp;</span> conecta milhares de desenvolvedores<br>e empresas através de portfólios incríveis
+    </p>
+  </div>
+</div>
+ 
+<div class='row home-content'>
+  <div class='col l3 offset-l1 s12'>
+    <div class='card-title center'>
+      Crie seu Perfil<br>gratuitamente agora
+    </div>
+    <%= render '/devise/registrations/new' %>
+  </div>
+  <div class='col l4 hide-on-med-and-down'>
+    <div class='vertical-divider top-v-divider grey'></div>
+    <p class='divider-text center'>OU</p>
+    <div class='vertical-divider'></div>
+  </div>
+  <div class='col l3 s12'>
+    <div class='card-title center'>
+      Encontre os melhores<br>prestadores de serviço
+    </div>
+    <%= render 'search' %>
+  </div>
+</div>
