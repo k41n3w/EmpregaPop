@@ -1,5 +1,6 @@
 # language:pt
- 
+
+@javascript 
 Funcionalidade: Listar Portfólios
   Portfólios do usuário são exibidos ao acessar a lista de portfólios
  
