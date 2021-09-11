@@ -1,4 +1,11 @@
 .portfolios {
+  .add-portfolio {
+    a.new-portfolio > img {
+      margin-top: 55%;
+      margin-bottom: 55%;
+    }
+  }
+  
   .title{
     font-weight: 700;
     margin-top: 30px;

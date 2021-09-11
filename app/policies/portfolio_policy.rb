@@ -3,9 +3,17 @@ class PortfolioPolicy < ApplicationPolicy
     true
   end
 
+  def create?
+    true
+  end
+
+  def edit?
+    true
+  end
+
   class Scope < Scope
     def resolve
-      user.portfolios
+      @user.portfolios
     end
   end
 end

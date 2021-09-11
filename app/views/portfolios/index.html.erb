@@ -1,7 +1,14 @@
-
 <div class="row portfolios">
   <div class="col m12">
     <p class="custom-grey-text title">Seus Portfólios</p>
   </div>
   <%= render @portfolios %>
+
+    <div class="add-portfolio col s12 m3 l3">
+      <div class="card-panel center">
+        <%= link_to portfolios_path, method: :post, class: "new-portfolio" do %>
+          <%= image_tag("add_portfolio.png", width: "150px" ) %>
+            <% end %>
+      </div>
+    </div>
 </div>
