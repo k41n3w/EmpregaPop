@@ -1,0 +1,39 @@
+.portfolios {
+  .title{
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+ 
+  .portfolio {
+    span.name {
+      font-size: 0.9em;
+      margin-top: 1em;
+    }
+ 
+    div.profession {
+      margin-top: 0.5em;
+      box-shadow: 1px 1px 2px grey;
+      -webkit-box-shadow: 1px 1px 2px grey;
+      -moz-box-shadow: 1px 1px 2px grey;
+    }
+ 
+    div.tags {
+      span.label {
+        border-radius: 1em;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+      }
+    }
+ 
+    div.actions a.btn {
+      font-size: 12px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      text-transform: capitalize;
+    }
+  }
+}
