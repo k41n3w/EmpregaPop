@@ -63,3 +63,7 @@ Então 'o campo {string} do portfólio é atualizado' do |field|
   @portfolio.reload
   expect(@portfolio[field]).to eq(@new_value)
 end
+
+Dado 'possui o portfólio com slug {string}' do |slug|
+  @portfolio = create(:portfolio, slug: slug, user_id: @user.id)
+end
