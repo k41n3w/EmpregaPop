@@ -11,6 +11,14 @@ class PortfolioPolicy < ApplicationPolicy
     true
   end
 
+  def show?
+    true
+  end
+
+  def update?
+    record.user == user
+  end
+
   class Scope < Scope
     def resolve
       @user.portfolios
