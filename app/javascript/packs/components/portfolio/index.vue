@@ -58,8 +58,10 @@
 
 const url = new URL(document.location)
 
+import Tags from './tags.vue'
+
 export default {
-  components: {  },
+  components: { Tags },
 
   data() {
     return {
